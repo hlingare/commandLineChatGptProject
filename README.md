@@ -76,11 +76,23 @@ The **ChatGPT Bash Command Helper** is a Python-based command-line tool that all
 ## Example Interaction
 
 ```
-You: How do I list files in a directory?
-ChatGPT: command: ls -l
-
+➜  itermProject git:(main) ./chatgpt.py 
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+ChatGPT Bash Command Helper (type 'exit' or 'quit' to end)
+You: ls file command
+ChatGPT: Error: Response format invalid. Please provide a command in the format 'command: <your-command>'.
+You: get me a command for ls
+You: get me a command for ls
+ChatGPT: command: ls
+You: how do i find all files by date
+You: how do i find all files by date
+ChatGPT: command: ls -lt 
 You: run it
-ChatGPT: (output of the ls -l command)
+You: Running command: ls -lt
+ChatGPT: total 24
+-rw-r--r--  1 harshalingareddy  staff   191 Oct  3 16:58 command_history.txt
+-rwxr-xr-x  1 harshalingareddy  staff  4169 Oct  3 16:53 chatgpt.py
 ```
 
 ## Logging
